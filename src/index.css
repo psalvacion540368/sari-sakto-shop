@@ -2,39 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Sari-Sari Store Design System - Filipino-inspired warm colors */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 30 20% 98%;
+    --foreground: 25 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 25 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 25 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Warm sunset orange as primary */
+    --primary: 18 95% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Soft warm secondary */
+    --secondary: 35 100% 95%;
+    --secondary-foreground: 25 15% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 35 50% 96%;
+    --muted-foreground: 25 8% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Tropical green accent */
+    --accent: 150 60% 35%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 30% 90%;
+    --input: 35 30% 90%;
+    --ring: 18 95% 60%;
+
+    /* Custom sari-sari store tokens */
+    --store-orange: 18 95% 60%;
+    --store-yellow: 45 100% 65%;
+    --store-green: 150 60% 35%;
+    --store-warm: 35 100% 95%;
+    
+    /* Gradients */
+    --gradient-sunset: linear-gradient(135deg, hsl(18 95% 60%), hsl(45 100% 65%));
+    --gradient-warm: linear-gradient(180deg, hsl(35 100% 98%), hsl(35 50% 96%));
+    --gradient-hero: linear-gradient(135deg, hsl(18 95% 60%) 0%, hsl(25 100% 50%) 50%, hsl(45 100% 65%) 100%);
+    
+    /* Shadows */
+    --shadow-warm: 0 4px 20px hsl(18 95% 60% / 0.15);
+    --shadow-card: 0 2px 10px hsl(25 15% 15% / 0.08);
+    --shadow-button: 0 4px 15px hsl(18 95% 60% / 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --radius: 0.5rem;
 
